@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Oswald:wght@500&family=Permanent+Marker&display=swap');
+         
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .front {
+            background: linear-gradient(95deg, rgba(0,0,0,0.9136029411764706) 0%, rgba(0,0,0,0.5410539215686274) 100%), url(bg.jpg);
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            height: 80px;
+            width: 100%;
+            background: rgb(221, 221, 221);
+            box-shadow: inset 0px -8px 6px -6px #252525;
+            justify-content: space-between;
+            align-items: center; 
+            margin: 0;
+            letter-spacing: 2px;
+            padding: 0;
+        }
+
+        .nav-menu  .logo img {
+            width: 100%;
+            max-width: 70px;
+            margin: 10px 1.3rem;
+        }
+
+        #button {
+            background-color: #00caca;
+            margin-left: 30px;
+            padding: 15px 50px;
+            font-size: 12px;
+            border-radius: 50px;
+            box-shadow: inset 0 0 0 0 rgb(0, 73, 73);
+            transition: 0.3s;
+        }
+
+        #button i {
+            font-size:15px;
+        }
+
+        #button:hover {
+            color: white;
+            box-shadow:  inset 250px 0 0 0 rgb(0, 73, 73);
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-family: 'Arial Black';
+            font-weight: bold;
+            padding: 20px 30px;
+            transition: .3s;
+            outline: none;
+        }
+
+        .nav-menu a:hover {
+            color: rgb(0, 202, 202); 
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: auto 2rem;
+        }
+
+        
+
+        #toggle-btn, label {
+            display: none;
+            margin: auto 4rem;
+        }
+
+        .text-cnt {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: rgb(255, 255, 255);
+            margin: 0 8vw;
+            padding: 6vw 0;
+        }
+
+        .text-cnt h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 5vw;
+            margin-bottom: 30px;
+        }
+
+        .text-cnt p {
+            font-family: Calibri;
+            font-size: 17px;
+            width: 100%;
+            max-width: 1000px;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+
+        .btn-home button {
+            color: white;
+            text-decoration: none;
+            height: 50px;
+            width: 230px;
+            border: 2px solid rgb(0, 255, 234);
+            background-color: #25252500;
+            border-radius: 50px;   
+            font-family: 'Arial Black';
+            font-size: 12px;
+            letter-spacing: 2px;
+            outline: none;
+            box-shadow: inset 0 0 0 0 rgb(0, 255, 234);
+            cursor: pointer;
+            transition: ease-out .3s;
+        }
+
+        .btn-home button:hover {
+            box-shadow: inset 250px 0 0 0 rgb(0, 255, 234);
+            color: black;
+        }
+
+        .home-images {  
+            margin-top: 5vw;
+            margin-right: 6vw;
+            margin-left: 60px;
+            display: inline-block; 
+        } 
+            
+        .card {
+            display: inline-block;
+            height: 15vw;
+            width: 12vw; 
+            border-radius: 10px;
+            background: rgb(0,0,0);
+            background-position: center;
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.623);
+            background-size: cover;
+            margin: 12px;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            align-items: center;
+        }
+
+        .card p, h5 {
+            opacity: 0;
+            transition: .5s ease-in;
+            align-self: center;
+        }
+
+        .card:hover {
+            transform: translate(1px, 5px);
+            .card, p, h5 {
+                opacity: 1;
+                 
+            }
+        } 
+
+        .card1 {
+            background: linear-gradient(95deg, rgba(0, 0, 0, 0.507) 100%, rgba(0, 0, 0, 0.356) 100%), url(plawan.jpg); 
+            background-position: center;
+            background-size: cover; 
+            margin-bottom: 0;
+        }
+
+        .card2 {
+            background: linear-gradient(95deg, rgba(0, 0, 0, 0.507) 100%, rgba(0, 0, 0, 0.356) 100%), url(intramuros.jpg); 
+            background-position: center;
+            background-size: cover;  
+        }
+
+        .card3 {
+            background: linear-gradient(95deg, rgba(0, 0, 0, 0.507) 100%, rgba(0, 0, 0, 0.356) 100%), url(chocohills.jpg); 
+            background-position: center;
+            background-size: cover;
+        }
+
+        .card4 {
+            background: linear-gradient(95deg, rgba(0, 0, 0, 0.507) 100%, rgba(0, 0, 0, 0.356) 100%), url(rizalpark.jpg); 
+            background-position: center;
+            background-size: cover;  
+        }
+
+        .card h5 {
+            font-size: 12px; 
+            padding-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 770px) {
+           .home-images {
+               display: block;
+               margin: 0;  
+               align-items: center;
+               margin: 0 20px;  
+           }
+
+           .card {
+               margin: 7px;
+           }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .front {
+                display: block;
+                height: 100%;
+            }
+            .menu-list {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+            }
+
+            #toggle-btn, label, .nav-menu  .logo h1 {
+                margin: 20px 2rem;
+            }
+
+            label {
+                display: inline-flex;
+            }
+
+            #toggle-btn:checked~.menu-list {
+                max-height: 100vh;
+                transition: .3s ease-in-out;
+                position: absolute;
+                left: 0;
+                top: 80px;
+                z-index: 1;
+            } 
+
+            ul {
+                width: 100%;
+                height: 200vh;
+                background: linear-gradient(184deg, rgb(204, 204, 204) 13%, rgb(219, 219, 219) 100%);
+                color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                text-align: center;
+                padding: 40px;
+                gap: 50px;
+                margin: 0;
+                }
+
+            #button {
+                margin-left: -5px;
+            }
+
+            .text-cnt {
+                margin: 0 12vw;
+            }
+
+            .text-cnt h1 {
+                font-size: 11vw;
+                align-self: left;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            } 
+
+            .text-cnt p {
+                font-size: 16px;
+                line-height: 21px;
+                margin-right: 5vw;
+            }
+
+            .btn-home button {
+                align-self: center;
+                font-size: 10px;
+                height: 40px;
+                width: 180px;
+            }
+
+            .home-images {
+                margin-top: 50px;
+            }
+
+            .card {
+                height: 180px;
+                width: 140px;
+            }
+            
+        }
+
+
