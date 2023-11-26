@@ -297,6 +297,10 @@
                 height: 180px;
                 width: 140px;
             }
+
+            .card p, h5 {
+                font-size: 11px; 
+            }          
             
         }
 
