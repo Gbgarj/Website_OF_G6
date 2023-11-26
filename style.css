@@ -5,6 +5,7 @@
             margin: 0;
             box-sizing: border-box;
             font-family: sans-serif;
+            scroll-behavior: smooth;     
         }
 
         .front {
@@ -276,7 +277,7 @@
             } 
 
             .text-cnt p {
-                font-size: 12px;
+                font-size: 10px;
                 line-height: 21px;
                 margin-right: 5vw;
             }
