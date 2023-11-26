@@ -215,6 +215,11 @@
            .card {
                margin: 7px;
            }
+
+           .card p {
+                font-size: 11px; 
+            }          
+                  
         }
 
         @media screen and (max-width: 1000px) {
@@ -298,9 +303,6 @@
                 width: 140px;
             }
 
-            .card p, h5 {
-                font-size: 11px; 
-            }          
             
         }
 
